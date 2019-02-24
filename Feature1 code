@@ -1,0 +1,28 @@
+public static void Main(String[] args)
+{
+
+// game starts and variable square means that the token is on square 1
+int square = 1;
+
+//random number for when the die would be thrown(on button click)
+
+Random randomNumber = new Random();
+int dice = randomNumber.Next(1,6);
+
+//square gets updated when dice would be thrown
+// and players token would be moved to square 4
+// as a result, square gets updated
+
+square = square + dice;
+
+if (square + dice ==100)
+{
+    Console.WriteLine("YOUR THE WINNER");
+} 
+
+else if (square + dice > 100)
+
+{
+    square = square;
+}
+}
